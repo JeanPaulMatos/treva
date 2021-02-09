@@ -1,0 +1,13 @@
+.header {
+    width: 80%;
+    margin: auto;
+
+    &__container {
+        display: flex;
+
+        &--logo {
+            width: 200px;
+        }
+    }
+
+}

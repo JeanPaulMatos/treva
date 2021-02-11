@@ -1,0 +1,81 @@
+.lovers {
+
+    padding-top: 200px;
+
+    &--title {
+        font-family: $Fuente1;
+        color: $color-texto1;
+        font-size: 40px;
+        line-height: 54px;
+        text-align: center;    
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 85%;
+        margin: auto;
+        gap: 70px 75px;
+        padding-top: 67px;
+
+        &--box {
+            background-color: #D5DCFB;
+            padding: 30px;
+            border-radius: 12px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+            &--text {
+                font-family: $Fuente2;
+                font-size: 18px;
+                line-height: 165.18%;
+                text-align: justify;
+            }
+
+            &--people {
+                display: flex;
+                column-gap: 30px;
+                align-items: center;
+                padding-top: 18px;
+
+                &--job {
+
+                    padding-bottom: 10px;
+
+                    &--name {
+                        font-family: $Fuente1;
+                        font-size: 18px;
+                        letter-spacing: 0.3px;
+                    }
+                    
+                    &--position {
+                        font-family: $Fuente1;
+                        font-size: 16px;
+                        font-weight: 600;
+                        letter-spacing: 0.3px;
+                        padding-top: 3px;
+                    }
+
+                }
+
+            }
+
+        }
+
+        &--box2 {
+            background-color: #F8E1FE;
+        }
+        &--box3 {
+            background-color: #FDE1E1;
+        }
+        &--box4 {
+            background-color: #CCECD7;
+        }
+        &--box5 {
+            background-color: #D4F5FF;
+        }
+        &--box6 {
+            background-color: #FAF3DA;
+        }
+    }
+
+}

@@ -1,0 +1,30 @@
+.header {
+    width: 85%;
+    margin: auto;
+    padding-top: 25px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--logo {
+            width: 185px;
+            left: 120px;
+            top: 56px;
+        }
+        &--link {
+            background-color: $color-principal;
+            justify-content: center;
+            width: 120px;
+            height: 42px;
+            font-family: $Fuente1;
+            border-radius: 20px;
+            color: $color-blanco;
+            font-weight: 600;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}

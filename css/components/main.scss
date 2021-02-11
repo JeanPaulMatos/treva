@@ -1,0 +1,66 @@
+.main {
+
+    &--title {
+        font-family: $Fuente1;
+        font-size: 46px;
+        text-align: center;
+        line-height: 61px;
+        padding-top: 25px;
+        color: $color-texto1;
+    }
+
+    &--subtitle {
+        font-family: $Fuente2;
+        width: 743px;
+        height: 81px;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 40px;
+        text-align: center;
+        color: $color-texto2;
+        margin: auto;
+        padding-top: 14px;
+    }
+    
+    &__container {
+        
+        &--buttons {
+            
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            padding-top: 50px;
+
+            &--search {
+                font-family: $Fuente2;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 8px;
+                font-size: 25px;
+                background-color: $color-principal;
+                color: $color-blanco;
+                width: 151px;
+                height: 55px;
+                border: 2px solid $color-principal;
+                cursor: pointer
+            }
+            
+            &--recruit {
+                @extend .main__container--buttons--search;
+                background-color: $color-blanco;
+                color: $color-principal;
+            }
+
+        }
+
+        &--image {
+
+            &--img {
+                padding-top: 60px;
+                width: 100%;
+            }
+    
+        }
+
+    }
+
+}

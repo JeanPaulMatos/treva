@@ -1,23 +1,61 @@
 .suscribe {
 
+    display: grid;
+    justify-items: center;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    
     &--title {
         font-family: $Fuente1;
         font-size: 40px;
         line-height: 54px;
-        text-align: center;
         color: $color-texto1;
+        padding-bottom: 21px;
     }
-
+    
     &--text {
         font-family: $Fuente2;
         font-size: 26px;
         line-height: 40px;
         text-align: center;
         color: $color-texto1;
-        width: 551px;
-height: 79px;
-left: 455px;
-top: 4679px;
+        padding: 0 23rem;
+    }
+
+    &__form {
+        display: flex;
+        padding-top: 68px;
+
+        &--input {
+            background: rgba(216, 216, 216, 0.388904);
+            border-radius: 8px 0px 0px 8px;
+            padding: 0 4rem;
+            border: none;
+            width: 680px;
+            height: 69px;
+            outline: none;
+            
+            &--button {
+                padding: 1rem 2.8rem;
+                display: flex;
+                align-items: center;
+                color: $color-blanco;
+                background-color: $color-principal;
+                border: none;
+                border-radius: 0px 8px 8px 0px;
+                font-family: $Fuente1;
+                font-size: 26px;
+                cursor: pointer;
+                outline: none;
+            }
+            
+            &--arrow {
+                padding-left: 8px;
+                padding-top: 3px;
+            }
+
+        }
+
     }
 
 }

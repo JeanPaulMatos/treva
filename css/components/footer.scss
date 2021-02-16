@@ -1,12 +1,11 @@
 .footer {
-
-    width: 85%;
-    margin: auto;
-
+    
     &__container {
+        width: 85%;
+        margin: auto;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        justify-content: center;
+        justify-items: center;
 
         &--box {
             display: grid;
@@ -31,6 +30,10 @@
                 color: $color-footer-texto;
             }
 
+            &--link:hover {
+                color: $color-principal;
+            }
+
             &--social {
                 display: flex;
                 align-items: center;
@@ -39,6 +42,15 @@
                 &--img {
                     padding-right: 11px;
                 }
+            }
+        }
+
+        &--images {
+
+
+            &--img {
+                padding-top: 80px;
+                width: 100%;
             }
         }
     }

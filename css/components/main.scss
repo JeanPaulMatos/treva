@@ -44,11 +44,19 @@
                 cursor: pointer;
                 outline: none;
             }
+            &--search:hover {
+                transform: translateY(-7px);
+                transition: all .2s ease-in-out;
+            }
             
             &--recruit {
                 @extend .main__container--buttons--search;
                 background-color: $color-blanco;
                 color: $color-principal;
+            }
+            &--recruit:hover {
+                transform: translateY(-7px);
+                transition: all .2s ease-in-out;
             }
 
         }
@@ -60,6 +68,48 @@
                 width: 100%;
             }
     
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .main {
+
+        &--title {
+            font-size: 22px;
+            line-height: 30px;
+            padding: 0 60px;
+            margin-top: 22px;
+        }
+
+        &--subtitle {
+            font-size: 16px;
+            text-align: center;
+            width: 0;
+            height: 0;
+        }
+
+        &__container {
+
+            &--buttons {
+
+                &--search {
+
+                }
+
+                &--recruit {
+
+                }
+
+            }
+
+            &--img {
+                
+            }
+
         }
 
     }

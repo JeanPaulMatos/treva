@@ -1,0 +1,146 @@
+.tabs {
+    padding: 5.625rem 0;
+
+    &__container {
+        
+        &--title {
+            font-family: $Fuente1;
+            font-size: 40px;
+            line-height: 54px;
+            text-align: center;
+            color: $color-texto1;
+        }
+
+        &--button {
+            margin-top: 65px;
+
+            &--links {
+                font-weight: 600;
+                font-family: $Fuente1;
+                display: flex;
+                justify-content: center;
+                gap: 130px;
+                margin-bottom: 100px;
+
+                li {
+                    a {
+                        font-size: 18px;
+                        padding: 0 1.4375rem 1.125rem 1.4375rem;
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                        -webkit-transition: all .3s ease;
+                        -o-transition: all .3s ease;
+                        transition: all .3s ease;
+                        border-bottom: 2px solid transparent;
+                        color: $color-texto2;
+                        letter-spacing: 0.2px;
+                        
+                        
+                        &:hover {
+                            color: $color-principal;
+                            border-bottom: 2.5px solid $color-principal;
+                        }
+
+                        img {
+                            padding-right: 20px;
+                        }
+
+                    }
+                    
+                    &.active {
+                        a {
+                            color: $color-principal;
+                            border-bottom: 2.5px solid $color-principal;
+                        }
+                    }
+                }
+
+                &--content {
+                    
+    
+                    >div {
+                        display: none;
+                        -webkit-transition: all .5s ease;
+                        -o-transition: all .5s ease;
+                        transition: all .5s ease;
+                    }
+    
+                    .active {
+                        display: block;
+                    }
+    
+                    &--item {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        position: relative;
+    
+                        &--left {
+
+                            margin-top: 20px;
+                            /* width: 70%; */
+
+                            &--text {
+
+                                position: absolute;
+                                padding-left: 100px;
+                                margin-top: 45px;
+
+                                &--title {
+                                    font-family: $Fuente1;
+                                    font-size: 26px;
+                                    line-height: 35px;
+                                    color: $color-blanco;
+                                    margin-top: 25px;
+                                    margin-bottom: 10px;
+                                }
+                                
+                                &--description {
+                                    font-size: 1rem;
+                                    font-family: $Fuente2;
+                                    font-size: 17px;
+                                    line-height: 35px;
+                                    color: $color-blanco;
+                                }
+
+                            }
+
+                            &--aplica {
+                                padding-left: 170px;
+                                margin-top: 135px;
+                            }
+                            
+                        }
+                        
+                        &--right {
+                            position: absolute;
+                            right: 0%;
+                        }
+
+                        &--postula {
+                            margin-top: 150px;
+                        }
+                        
+                        &--preparate {
+                            margin-top: 100px;
+                        }
+
+
+                        &--tabs {
+
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+
+                &--aplica {
+                    margin-top: -60px;
+                }
+
+            }
+
+        }
+    }
+}

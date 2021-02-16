@@ -1,0 +1,224 @@
+.price {
+
+    margin-top: 200px;
+
+    &--title {
+        font-family: $Fuente1;
+        font-size: 40px;
+        line-height: 54px;
+        text-align: center;
+        color: $color-texto1;
+        padding-bottom: 50px;
+    }
+
+    &--text {
+        font-family: $Fuente2;
+        font-size: 26px;
+        line-height: 30px;
+        letter-spacing: 0.165px;
+        color: $color-texto2;
+        text-align: center;
+    }
+
+    &__container {
+
+        width: 80%;
+        margin: auto;
+        text-align: center;
+
+        &--toggleSwitch {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 30px;
+            margin-top: 50px;
+            margin: 50px 0 60px;
+
+            &--annual {
+                color: $color-texto2;
+                font-family: $Fuente1;
+                font-size: 22px;
+                line-height: 30px;
+                letter-spacing: 0.2px;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+            
+            &--toggle {
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                width: 50px;
+                height: 26px;
+                background-color: $color-principal;
+                border-radius: 25px;
+                margin: 0 1rem;
+                position: relative;
+                cursor: pointer;
+                outline: none;
+                
+                &::before {
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    background-color: $color-blanco;
+                    position: absolute;
+                    border-radius: 50%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 4px;
+                    box-shadow: 0px 4px 20px 4px rgb(0 0 0 / 25%);
+                }
+                
+                &:checked:before {
+                    right: 55%;
+                }
+            }
+            &--montly {
+                @extend .price__container--toggleSwitch--annual;
+            }
+        }
+
+        &--cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+
+            &--card {
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+                border-radius: 17px;    
+                box-shadow: 0px 4px 20px 4px rgb(0 0 0 / 25%);
+                height: 735px;
+
+                &--img {
+                    margin-top: 25px;
+                }
+
+                &--title {
+                    font-family: $Fuente1;
+                    font-size: 26px;
+                    letter-spacing: 0.2px;
+                    color: $color-texto1;
+                    line-height: 30px;
+                    padding-top: 27px;
+                    text-transform: uppercase;
+                }
+
+                &--price {
+                    font-family: $Fuente2;
+                    font-size: 56px;
+                    line-height: 60px;
+                    letter-spacing: 0.165px;
+                    color: $color-texto2;
+                    padding-top: 20px;
+                }
+
+                &--plan {
+                    
+                    margin-top: 34px;
+
+                    &--container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding-bottom: 25px;
+
+                        &--img {
+                            padding-right: 16px;
+                        }
+
+                        &--text {
+                            font-family: $Fuente2;
+                            font-size: 16px;
+                            letter-spacing: 0.165px;
+                        }
+                    }
+                }
+
+                &--button {
+                    margin-top: 20px;
+                    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+                    border-radius: 50px;
+                    background-color: $color-principal;
+                    color: $color-blanco;
+                    width: 241px;
+                    height: 43px;
+                    font-family: $Fuente1;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                &--button:hover {
+                    transform: translateY(-7px);
+                    transition: all .2s ease-in-out;
+
+                }
+            }
+
+            &--card1 {
+                margin-top: 70px;
+                height: 600px;
+                border-radius: 25px 0px 0px 25px;
+                box-shadow: -10px 0px 20px 0px rgb(0 0 0 / 25%);
+
+                &--img1 {
+                    margin-top: 53px;
+                }
+
+                &--title1 {
+                    padding-top: 17px;
+                    font-size: 22px;
+                }
+
+                &--price1 {
+                    font-size: 50px;
+                    padding-top: 15px;
+                }
+                
+                &--plan1 {
+                    margin-top: 25px;
+                }
+
+                &--button1 {
+                    margin-top: 10px;
+                }
+            }
+            
+            
+            &--card3 {
+                margin-top: 70px;
+                height: 600px;
+                border-radius: 0px 25px 25px 0px;
+                box-shadow: 10px 0px 20px rgb(0 0 0 / 25%);
+                
+                &--img3 {
+                    margin-top: 36px;
+                }
+                
+                &--title3 {
+                    padding-top: 14px;
+                    font-size: 22px;
+                }
+                
+                &--price3 {
+                    font-size: 50px;
+                    padding-top: 11px;
+                    
+                }
+
+                &--plan3 {
+                    margin-top: 19px;
+                }
+
+                &--button3 {
+                    margin-top: 9px;
+                }
+            }
+
+        }
+
+    }
+
+}

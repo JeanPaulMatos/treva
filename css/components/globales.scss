@@ -1,6 +1,7 @@
 $Fuente1: 'Open Sans', sans-serif;
 $Fuente2: 'Roboto', sans-serif;
 $color-principal: #4A4EDD;
+$color-secundario: #7796FE;
 $color-blanco: #fff;
 $color-texto1: #2F2D2D;
 $color-texto2: #37474F;
@@ -19,6 +20,7 @@ html {
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-weight: 700;
+    letter-spacing: 0.3px;
 }
 figure {
     margin: 0;

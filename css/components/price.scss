@@ -1,10 +1,10 @@
 .price {
 
-    margin-top: 200px;
+    margin-top: 170px;
 
     &--title {
         font-family: $Fuente1;
-        font-size: 40px;
+        font-size: 34px;
         line-height: 54px;
         text-align: center;
         color: $color-texto1;
@@ -13,7 +13,7 @@
 
     &--text {
         font-family: $Fuente2;
-        font-size: 26px;
+        font-size: 22px;
         line-height: 30px;
         letter-spacing: 0.165px;
         color: $color-texto2;
@@ -22,7 +22,7 @@
 
     &__container {
 
-        width: 80%;
+        width: 85%;
         margin: auto;
         text-align: center;
 
@@ -57,6 +57,7 @@
                 position: relative;
                 cursor: pointer;
                 outline: none;
+                transition: all .4s ease-in-out;
                 
                 &::before {
                     content: '';
@@ -148,6 +149,7 @@
                     display: inline-flex;
                     align-items: center;
                     justify-content: center;
+                    letter-spacing: 0.5px;
                 }
 
                 &--button:hover {
@@ -215,6 +217,292 @@
                 &--button3 {
                     margin-top: 9px;
                 }
+            }
+
+        }
+
+    }
+
+}
+
+@media all and (max-width: 1024px) {
+
+    .price {
+
+        margin-top: 110px;
+
+        &--title {
+            font-size: 26px;
+            padding-bottom: 30px;
+        }
+
+        &--text {
+            font-size: 18px;
+        }
+
+        &__container {
+
+            &--toggleSwitch {
+
+                margin: 37px 0 55px;
+
+                &--annual {
+                    font-size: 18px;
+                }
+                &--montly {
+                    font-size: 18px;
+                }
+
+            }
+
+            &--cards {
+                grid-template-columns: repeat(1, 1fr);
+                width: 500px;
+                margin: auto;
+
+                &--card1 {
+                    margin-top: 0;
+                    border-radius: 25px;
+                    box-shadow: 0px 4px 20px 4px rgba(0,0,0,0.25);
+                    margin-bottom: 60px;
+                }
+                
+                &--card3 {
+                    margin-top: 60px;
+                    border-radius: 25px;
+                    box-shadow: 0px 4px 20px 4px rgba(0,0,0,0.25);
+
+                }
+            }
+
+        }
+
+    }
+
+}
+
+@media all and (max-width: 768px) {
+
+    .price {
+
+        &--title {
+            font-size: 24px;
+        }
+
+        &--text {
+            font-size: 17px;
+        }
+
+        &__container {
+
+            &--toggleSwitch {
+
+                &--annual {
+                    font-size: 17px;
+                }
+                &--toggle {
+                    height: 24px;
+
+                    &::before {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+                &--montly {
+                    font-size: 17px;
+                }
+            }
+
+            &--cards {
+                width: 480px;
+
+                &--card {
+
+                    &--img {
+                        width: 120px;
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+@media all and (max-width: 414px) {
+
+    .price {
+
+        &--title {
+            font-size: 20px;
+        }
+
+        &--text {
+            font-size: 16px;
+        }
+
+        &__container {
+
+
+            &--toggleSwitch {
+
+                &--annual {
+                    font-size: 16px;
+                }
+                
+                &--montly {
+                    font-size: 16px;
+                }
+
+            }
+
+            &--cards {
+                width: 352px;
+
+                &--card1 {
+
+                    height: 535px;
+
+                    &--img1 {
+                        margin-top: 35px;
+                    }
+                    
+                }
+
+                &--card2 {
+
+                    height: 715px;
+
+                    &--img2 {
+                        margin-top: 35px;
+                    }
+                }
+
+                &--card3 {
+                    height: 568px;
+                }
+                
+                &--card {
+                    
+                    &--title {
+                        font-size: 20px;
+                    }
+                    &--img {
+                        width: 100px;
+                    }
+
+                    &--price {
+                        font-size: 45px;
+                    }
+
+                    &--plan {
+
+                        &--container {
+
+                            &--img {
+                                width: 40px;
+                            }
+
+                            &--text {
+                                font-size: 15px;
+                            }
+
+                        }
+
+                    }
+
+                    &--button {
+
+                    }
+                    
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@media all and (max-width: 375px) {
+
+    .price {
+
+        &--title {
+            padding-bottom: 15px;
+        }
+
+        &--text {
+            font-size: 15px;
+            padding: 0 32px;
+        }
+
+        &__container {
+
+            
+            &--toggleSwitch {
+                margin: 30px 0 50px;
+            }
+
+            &--cards {
+                width: 315px;
+
+                &--card {
+
+                    &--img {
+                        width: 95px;
+                    }
+
+                    &--title {
+                        font-size: 19px;
+                        padding-top: 12px;
+                    }
+
+                    &--price {
+                        font-size: 42px;
+                        padding-top: 10px;
+                    }
+
+                    &--plan {
+
+
+                        &--container {
+
+                            &--img {
+                                width: 38px;
+                            }
+
+                            &--text {
+                                font-size: 14.5px;
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                &--card1 {
+                    
+                    height: 512px;
+
+                }
+
+                &--card2 {
+
+                    height: 662px;
+
+                    &--plan2 {
+                        margin-top: 25px;
+                    }
+
+                }
+
+                &--card3 {
+                    height: 548px;
+                }
+
             }
 
         }

@@ -1,11 +1,11 @@
 .lovers {
 
-    padding-top: 200px;
+    padding-top: 170px;
 
     &--title {
         font-family: $Fuente1;
         color: $color-texto1;
-        font-size: 40px;
+        font-size: 34px;
         line-height: 54px;
         text-align: center;    
     }
@@ -76,6 +76,144 @@
         &--box6 {
             background-color: #FAF3DA;
         }
+    }
+
+}
+
+@media all and (max-width: 1024px) {
+
+    .lovers {
+
+        padding-top: 50px;
+
+        &--title {
+            font-size: 26px;
+        }
+
+        &__container {
+
+            grid-template-columns: repeat(2, 1fr);
+
+            &--box {
+
+                &--text {
+                    font-size: 17px;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@media all and (max-width: 768px) {
+
+    .lovers {
+
+        padding-top: 32px;
+
+        &--title {
+            font-size: 24px;
+        }
+
+        &__container {
+            grid-template-columns: 1fr;
+            width: 75%;
+
+            &--box {
+
+                &--text {
+                    font-size: 16px;
+                }
+
+                &--people {
+
+                    &--job {
+
+                        &--name {
+                            font-size: 17px;
+                        }
+                        
+                        &--position {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+
+            &--box4 {
+                display: none;
+            }
+        }
+
+    }
+
+}
+
+@media all and (max-width: 414px) {
+
+    .lovers {
+
+        &--title {
+            font-size: 20px;
+            padding: 0 26px;
+            line-height: 35px;
+        }
+    
+        &__container {
+    
+            padding-top: 30px;
+            width: 85%;
+
+            &--box {
+    
+                &--text {
+                    font-size: 15px;
+                    line-height: 30px;
+                }
+    
+                &--people {
+
+                    figure {
+
+                        img {
+                            width: 70px;
+                        }
+                    }
+
+                    &--job {
+
+                        &--name {
+                            font-size: 16px;
+                        }
+
+                        &--position {
+                            font-size: 14px;
+                        }
+                    }
+                }
+    
+            }
+
+            &--box5 {
+                display: none;
+            }
+    
+        }
+
+    }
+}
+
+@media all and (max-width: 375px) {
+
+    .lovers {
+
+        &--title {
+            padding: 0 6px;
+        }
+
     }
 
 }

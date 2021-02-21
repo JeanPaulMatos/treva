@@ -2,7 +2,7 @@
 
     &--title {
         font-family: $Fuente1;
-        font-size: 46px;
+        font-size: 42px;
         text-align: center;
         line-height: 61px;
         padding-top: 25px;
@@ -14,7 +14,7 @@
         width: 743px;
         height: 81px;
         font-weight: 400;
-        font-size: 26px;
+        font-size: 22px;
         line-height: 40px;
         text-align: center;
         color: $color-texto2;
@@ -35,11 +35,11 @@
                 font-family: $Fuente2;
                 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                 border-radius: 8px;
-                font-size: 25px;
+                font-size: 22px;
                 background-color: $color-principal;
                 color: $color-blanco;
-                width: 151px;
-                height: 55px;
+                width: 145px;
+                height: 50px;
                 border: 2px solid $color-principal;
                 cursor: pointer;
                 outline: none;
@@ -74,22 +74,18 @@
 
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1024px) {
 
     .main {
 
         &--title {
-            font-size: 22px;
-            line-height: 30px;
-            padding: 0 60px;
-            margin-top: 22px;
+            font-size: 32px;
+            
         }
 
         &--subtitle {
-            font-size: 16px;
-            text-align: center;
-            width: 0;
-            height: 0;
+            font-size: 18px;
+            width: 642px;
         }
 
         &__container {
@@ -97,17 +93,133 @@
             &--buttons {
 
                 &--search {
-
+                    font-size: 20px;
+                    width: 135px;
+                    height: 45px;
                 }
+            }
 
-                &--recruit {
+        }
 
+    }
+
+}
+
+@media all and (max-width: 768px) {
+
+    .main {
+
+        &--title {
+            font-size: 28px;
+        }
+
+        &--subtitle {
+            font-size: 17px;
+            width: 607px;
+        }
+
+        &__container {
+            
+            &--buttons {
+
+                &--search {
+                    font-size: 18px;
+                    width: 125px;
+                    height: 40px;
                 }
 
             }
 
-            &--img {
+        }
+
+    }
+
+}
+
+@media all and (max-width: 414px) {
+
+    .main {
+
+        &--title {
+            font-size: 24px;
+            padding: 30px 67px 0;
+            line-height: 38px;
+        }
+
+        &--subtitle {
+            width: 100%;
+            padding: 20px 23px 0;
+            font-size: 16px;
+        }
+
+        &__container {
+
+            &--buttons {
+
+                padding-top: 90px;
+                gap: 25px;
+
+                &--search {
+                    font-size: 17px;
+                    width: 120px;
+                    height: 38px;
+                }
+
+            }
+
+            &--image {
+
+                &--img {
+                    padding-top: 92px;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@media all and (max-width: 375px) {
+
+    .main {
+
+        &--title {
+            font-size: 22px;
+            line-height: 30px;
+            padding: 0 56px;
+            margin-top: 22px;
+        }
+
+        &--subtitle {
+            text-align: center;
+            font-size: 15px;
+            width: 100%;
+            padding: 20px 46px 0;
+        }
+
+        &__container {
+
+            &--buttons {
+
+                padding-top: 130px;
+                gap: 20px;
                 
+                &--search {
+                    font-size: 16px;
+                    width: 115px;
+                    height: 35px;
+                }
+            }
+
+
+            &--image {
+
+                img {
+                    padding-top: 44px;
+                }
+
             }
 
         }

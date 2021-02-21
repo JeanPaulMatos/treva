@@ -34,6 +34,16 @@
                 color: $color-principal;
             }
 
+            &--fb:hover {
+                color: #4267b2;
+            }
+            &--twt:hover {
+                color: #1da1f2;
+            }   
+            &--ins:hover {
+                color: #df0142;
+            }
+
             &--social {
                 display: flex;
                 align-items: center;
@@ -53,6 +63,140 @@
                 width: 100%;
             }
         }
+    }
+
+}
+
+@media all and (max-width: 1024px) {
+
+    .footer {
+
+        &__container {  
+
+            &--box {
+
+                &--title {
+                    font-size: 22px;
+                }
+
+                &--link {
+                    font-size: 15px;
+                }
+
+                &--img {
+                    width: 170px;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@media all and (max-width: 768px) {
+
+    .footer {
+
+        &__container {
+
+            &--box {
+
+                &--img {
+                    width: 160px;
+                }
+
+                &--title {
+                    font-size: 20px;
+                }
+
+
+            }
+
+        }
+
+    }
+
+}
+
+@media all and (max-width: 414px) {
+
+    .footer {
+
+        &__container {
+
+            grid-template-columns: 1fr;
+            justify-content: center;
+
+            &--box {
+
+                display: flex;
+                gap: 40px;
+
+                &--img {
+                    width: 145px;
+                    padding-bottom: 15px;
+                }
+
+                &--title {
+                    display: none;
+                }
+
+                &--link {
+                    padding: 5px;
+                }
+
+            }
+
+            &--box3 {
+                display: none;
+            }
+
+            &--images {
+
+                img {
+                    padding-top: 35px;
+                }
+
+            }
+
+            
+
+        }
+
+    }
+
+}
+
+@media all and (max-width: 375px) {
+
+    .footer {
+
+        &__container {
+
+            &--box {
+
+                gap: 25px;
+
+                &--img {
+                    width: 135px;
+                }
+
+                &--social {
+
+                    &--img {
+
+                        padding-right: 5px;
+
+                    }
+
+                }
+
+            }
+
+        }
+
     }
 
 }

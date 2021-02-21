@@ -32,9 +32,13 @@
                 <button class="main__container--buttons--search">Buscar</button>
                 <button class="main__container--buttons--recruit">Reclutar</button>
             </div>
-            <figure class="main__container--image">
+            <picture class="main__container--image">
+                <!-- <source media="(max-width: 375px)" srcset="images/bg-mobile.svg"> -->
+                <source media="(max-width: 414px)" srcset="images/bg-414px.svg">
+                <source media="(max-width: 1024px)" srcset="images/bg-ipad.svg">
+                <source media="(max-width: 1280px)" srcset="images/bg.svg">
                 <img class="main__container--image--img" src="images/bg.svg" alt="Imagen principal de Treva, en la que se muestra a un equipo de trabajo">
-            </figure>
+            </picture>
         </main>
         <!-- Main section ends here -->
 
@@ -43,7 +47,7 @@
             <div class="tabs__container">                
                 <h2 class="tabs__container--title">Descubre las Mejores Ofertas de Empleo</h2>
                 <div class="tabs__container--button">
-                    <ul id="tabs__container--button--links" class="tabs__container--button--links">
+                    <ul id="tabs__container--button--links" class="tabs__container--button--links tabs__container--button--aplica">
                         <li>
                             <a href="#postula">
                                 <img src="images/postula.svg" alt="Icono Azul claro para postular">Postula
@@ -65,42 +69,51 @@
                             <div class="tabs__container--button--links--content--item">
                                 <div class="tabs__container--button--links--content--item--left">
                                     <div class="tabs__container--button--links--content--item--left--text">
-                                        <h3 class="tabs__container--button--links--content--item--left--text--title">Impulsa tu Carrera Profesional</h3>
+                                        <h3 class="tabs__container--button--links--content--item--left--text--title tabs__container--button--links--content--item--left--text--postula">Impulsa tu Carrera Profesional</h3>
                                         <p class="tabs__container--button--links--content--item--left--text--description">Filium morte multavit si sine dubio praeclara sunt, explicabo <br> nemo enim ad minima. Probabo, inquit, modo ista sis aequitate,<br> quam ob rem aperiam eaque gaudere ut. t vero eos et<br> caritatem, quae ab eo ortum, tam crudelis fuisse, nihil. <br>Et quidem rerum necessitatibus saepe eveniet.</p>
+                                        <p class="tabs__container--button--links--content--item--left--text--hidden">Filium morte multavit si sine dubio praeclara sunt, explicabo nemo enim ad minima. Probabo, inquit, modo ista sis aequitate, quam ob rem aperiam eaque gaudere ut. t vero eos et caritatem, quae ab eo ortum, tam crudelis fuisse, nihil. Et quidem rerum necessitatibus saepe eveniet.</p>
                                     </div>
-                                    <img src="images/postula-tab-blue.svg" alt="Fondo Azul que cubre el contenido de la sección Postular">
+                                    <img class="tabs__container--button--links--content--item--left--img" src="images/postula-tab-blue.svg" alt="Fondo Azul que cubre el contenido de la sección Postular">
                                 </div>
-                                <figure class="tabs__container--button--links--content--item--right tabs__container--button--links--content--item--postula">
+                                <picture class="tabs__container--button--links--content--item--right tabs__container--button--links--content--item--postula">
+                                    <source media="(max-width: 1024px)" srcset="images/postula-complete.svg">
+                                    <source media="(min-width: 1440px)" srcset="images/postula tab.svg">
                                     <img src="images/postula tab.svg" alt="Imagen de una mujer postulante que esta buscando ofertas de trabajo">
-                                </figure>
+                                </picture>
                             </div>
                         </div> 
                         <div id="aplica">
                             <div class="tabs__container--button--links--content--item tabs__container--button--links--aplica">
                                 <div class="tabs__container--button--links--content--item--right">
                                     <div class="tabs__container--button--links--content--item--left--text tabs__container--button--links--content--item--left--aplica">
-                                        <h3 class="tabs__container--button--links--content--item--left--text--title">Destacate entre los demás candidatos</h3>
+                                        <h3 class="tabs__container--button--links--content--item--left--text--title tabs__container--button--links--content--item--left--text--aplica">Destacate entre los demás candidatos</h3>
                                         <p class="tabs__container--button--links--content--item--left--text--description">Filium morte multavit si sine dubio praeclara sunt, explicabo <br> nemo enim ad minima. Probabo, inquit, modo ista sis aequitate,<br> quam ob rem aperiam eaque gaudere ut. t vero eos etsur<br> caritatem, quae ab eo ortum, tam crudelis fuisse, nihil. <br>Et quidem rerum necessitatibus saepe eveniet salaek jaipe. <br> Probabo, inquit, modo ista sis aequitate, quam ob rem <br> consequat, diam viverra iaculis urna, sit. Neque pulvinar ornare.</p>
+                                        <p class="tabs__container--button--links--content--item--left--text--hidden">Filium morte multavit si sine dubio praeclara sunt, explicabo nemo enim ad minima. Probabo, inquit, modo ista sis aequitate, quam ob rem aperiam eaque gaudere ut. t vero eos et caritatem, quae ab eo ortum, tam crudelis fuisse, nihil. Et quidem rerum necessitatibus saepe eveniet.</p>
                                     </div>
-                                    <img src="images/aplica-tab-orange.svg" alt="Fondo Naranja que cubre el contenido de la sección Aplicar">
+                                    <img class="tabs__container--button--links--content--item--left--img" src="images/aplica-tab-orange.svg" alt="Fondo Naranja que cubre el contenido de la sección Aplicar">
                                 </div>
-                                <figure class="tabs__container--button--links--content--item--left tabs__container--button--links--content--item--aplica">
+                                <picture class="tabs__container--button--links--content--item--left tabs__container--button--links--content--item--aplica">
+                                    <source media="(max-width: 1024px)" srcset="images/aplica-complete.svg">
+                                    <source media="(min-width: 1440px)" srcset="images/aplica-img.svg">
                                     <img src="images/aplica-img.svg" alt="Imagen de una mujer caminando que está recibiendo correos de ofertas de trabajo">
-                                </figure>
+                                </picture>
                             </div>
                         </div>
                         <div id="preparate">
                             <div class="tabs__container--button--links--content--item tabs__container--button--links--aplica">
                                 <div class="tabs__container--button--links--content--item--right tabs__container--button--links--content--item--preparate">
                                     <div class="tabs__container--button--links--content--item--left--text tabs__container--button--links--content--item--left--aplica">
-                                        <h3 class="tabs__container--button--links--content--item--left--text--title">Encuentra tu siguiente empleo</h3>
+                                        <h3 class="tabs__container--button--links--content--item--left--text--title tabs__container--button--links--content--item--left--text--preparate">Encuentra tu siguiente empleo</h3>
                                         <p class="tabs__container--button--links--content--item--left--text--description">Filium morte multavit si sine dubio praeclara sunt, explicabo <br> nemo enim ad minima. Probabo, inquit, modo ista sis aequitate,<br> quam ob rem aperiam eaque gaudere ut. t vero eos etsur<br> caritatem, quae ab eo ortum, tam crudelis fuisse, nihil. <br>Et quidem rerum necessitatibus saepe eveniet salaek jaipe. <br> Probabo, inquit, modo ista sis aequitate, quam ob rem <br> consequat, diam viverra iaculis urna, sit. Neque pulvinar ornare.</p>
+                                        <p class="tabs__container--button--links--content--item--left--text--hidden">Filium morte multavit si sine dubio praeclara sunt, explicabo nemo enim ad minima. Probabo, inquit, modo ista sis aequitate, quam ob rem aperiam eaque gaudere ut. t vero eos et caritatem, quae ab eo ortum, tam crudelis fuisse, nihil. Et quidem rerum necessitatibus saepe eveniet.</p>
                                     </div>
-                                    <img src="images/preparate-tab-green.svg" alt="Fondo Verde que cubre el contenido de la sección Prepararse">
+                                    <img class="tabs__container--button--links--content--item--left--img" src="images/preparate-tab-green.svg" alt="Fondo Verde que cubre el contenido de la sección Prepararse">
                                 </div>
-                                <figure class="tabs__container--button--links--content--item--left">
+                                <picture class="tabs__container--button--links--content--item--left tabs__container--button--links--content--item--aplica">
+                                    <source media="(max-width: 1024px)" srcset="images/preparate-complete.svg">
+                                    <source media="(min-width: 1440px)" srcset="images/preparate-img.svg">
                                     <img src="images/preparate-img.svg" alt="Imagen de un hombre y una mujer en la espera para prepararse para su entrevista">
-                                </figure>
+                                </picture>
                             </div>
                         </div>
                     </div>
@@ -224,11 +237,11 @@
                     <!-- End the Standar Plan -->
                     
                     <!-- Start the Business Plan -->
-                    <div class="price__container--cards--card" id="card-2">
-                        <img class="price__container--cards--card--img" src="images/business.svg" alt="Imagen de Diamante color Naranja del Plan Standar">
-                        <h3 class="price__container--cards--card--title">Business Plan</h3>
-                        <h4 class="price__container--cards--card--price" id="business-price">$159</h4>
-                        <ul class="price__container--cards--card--plan">
+                    <div class="price__container--cards--card price__container--cards--card2" id="card-2">
+                        <img class="price__container--cards--card--img price__container--cards--card2--img2" src="images/business.svg" alt="Imagen de Diamante color Naranja del Plan Standar">
+                        <h3 class="price__container--cards--card--title price__container--cards--card2--title2">Business Plan</h3>
+                        <h4 class="price__container--cards--card--price price__container--cards--card2--price2" id="business-price">$159</h4>
+                        <ul class="price__container--cards--card--plan price__container--cards--card2--plan2">
                             <li class="price__container--cards--card--plan--container">
                                 <img class="price__container--cards--card--plan--container--img" src="images/check-price.svg" alt="Imagen de Check para los Precios de los planes de Treva">
                                 <p class="price__container--cards--card--plan--container--text">Amet minim mollit deserunt</p>
@@ -315,7 +328,7 @@
                     <a class="footer__container--box--link" href="#">Contacto</a>
                     <a class="footer__container--box--link" href="#">FAQ</a>
                 </div>
-                <div class="footer__container--box">
+                <div class="footer__container--box footer__container--box3">
                     <h4 class="footer__container--box--title">Privacidad</h4>
                     <a class="footer__container--box--link" href="#">Responsabilidad</a>
                     <a class="footer__container--box--link" href="#">Finanzas</a>
@@ -326,21 +339,22 @@
                     <h4 class="footer__container--box--title footer__container--box--title--social">Social</h4>
                     <div class="footer__container--box--social">
                         <img class="footer__container--box--social--img" src="images/facebook.svg" alt="Imagen del Logo de Facebook">
-                        <a class="footer__container--box--link" href="#">Facebook</a>
+                        <a class="footer__container--box--link footer__container--box--fb" href="#">Facebook</a>
                     </div>
                     <div class="footer__container--box--social">
                         <img class="footer__container--box--social--img" src="images/twitter.svg" alt="Imagen del Logo de Twitter">
-                        <a class="footer__container--box--link" href="#">Twitter</a>
+                        <a class="footer__container--box--link footer__container--box--twt" href="#">Twitter</a>
                     </div>
                     <div class="footer__container--box--social">
                         <img class="footer__container--box--social--img" src="images/instagram.svg" alt="Imagen del Logo de Instagram">
-                        <a class="footer__container--box--link" href="#">Instagram</a>
+                        <a class="footer__container--box--link footer__container--box--ins" href="#">Instagram</a>
                     </div>
                 </div>
             </nav>
-            <figure class="footer__container--images">
+            <picture class="footer__container--images">
+                <source media="(max-width: 768px)" srcset="images/footer--mobile.svg">
                 <img class="footer__container--images--img" src="images/footer-img.svg" alt="Imagen del Equipo de Trabajo de Treva en una reunión">
-            </figure>
+            </picture>
         </footer>
 
         
